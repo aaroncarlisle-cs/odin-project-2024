@@ -3,13 +3,17 @@
 	margin: 0;
 	padding: 0;
 }
-h3 {
+body {
+	background-color: #C3D0D9;
+}
+h3, p, a {
 	font-family: Gill Sans, Verdana;
 	font-size: 11px;
 	line-height: 14px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
+	color: #4B6C84;
 }
 h1 {
         font-family: times, Times New Roman, times-roman, georgia, serif;
@@ -20,4 +24,5 @@ h1 {
 	line-height: 44px;
 	letter-spacing: -2px;
 	font-weight: bold;
+	color: #4B6C84;
 }
