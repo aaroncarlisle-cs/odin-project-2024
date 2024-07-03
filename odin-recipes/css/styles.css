@@ -9,6 +9,7 @@ body {
 }
 .content {
 	background-color: rgb(229, 229, 250);
+	padding: 20px;
 }
 img {
 	border: 1px solid black;
