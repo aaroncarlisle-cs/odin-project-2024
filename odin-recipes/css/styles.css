@@ -5,6 +5,8 @@
 }
 body {
 	background-color: #C3D0D9;
+	margin: 50px auto;
+	width: 65%;
 }
 img {
 	border: 1px solid black;
