@@ -7,6 +7,9 @@ body {
 	margin: 50px auto;
 	width: 65%;
 }
+.content {
+	background-color: rgb(229, 229, 250);
+}
 img {
 	border: 1px solid black;
 	margin-left: 20px;
