@@ -78,13 +78,13 @@ ul, li {
   }
   .gallery {
     height: 400px;
-    padding: 20px 20%;
+    padding: 0 20%;
     flex-direction: column;
   }
   .gallery .header-text {
     display: flex;
     justify-content: center;
-    font-size: 34px;
+    font-size: 38px;
     margin: 40px;
   }
   .gallery-images {
