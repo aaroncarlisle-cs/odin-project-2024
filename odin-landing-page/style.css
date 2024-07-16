@@ -91,3 +91,10 @@ ul, li {
     border: 1px solid black;
     border-radius: 25px;
   }
+.header-link {
+    text-decoration: none;
+    color: #F2F2F2;
+}
+.header-link:hover {
+    color: black;
+}
