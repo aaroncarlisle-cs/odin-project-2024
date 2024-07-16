@@ -16,9 +16,10 @@ h1 {
 ul, li {
     display: flex;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     color: #F2F2F2;
     font-size: 18px;
+    justify-content: right;
 }
 .header-text {
     font-family: "Roboto Condensed", sans-serif;
@@ -30,4 +31,29 @@ ul, li {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+  .hero {
+    display: flex;
+    height: 400px;
+    background-color: #D9965B;
+    padding: 20px 20%;
+    justify-content: space-between;
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 10px;
+  }
+  .hero-text .header-text {
+    font-size: 40px;
+  }
+  .hero-text .paragraph-text {
+    font-size: 24px;
+    color: #F2F2F2;
+  }
+  .splash-image {
+    width: auto;
+    height: 300px;
+    border-radius: 25px;
   }
