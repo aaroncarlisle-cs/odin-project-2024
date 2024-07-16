@@ -70,6 +70,11 @@ ul, li {
     background-color: #F2F2F2;
     border: 2px solid black;
   }
+  .sign-up-button:hover {
+    background-color: #9FA4B2;
+    color: #F2F2F2;
+    cursor: pointer;
+  }
   .gallery {
     height: 400px;
     padding: 20px 20%;
