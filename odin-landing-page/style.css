@@ -100,8 +100,12 @@ li {
 }
 .gallery img {
   height: 300px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 25px;
+}
+.gallery img:hover {
+  border: 2px solid #008AD3;
+  cursor: pointer;
 }
 .header-link {
   text-decoration: none;
