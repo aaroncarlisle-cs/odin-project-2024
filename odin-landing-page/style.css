@@ -107,11 +107,11 @@ li {
   border: 2px solid #008AD3;
   cursor: pointer;
 }
-.header-link {
+.header-link, .footer-link {
   text-decoration: none;
   color: #f2f2f2;
 }
-.header-link:hover {
+.header-link:hover, .footer-link:hover {
   color: #008AD3;
 }
 header .header-text:hover {
@@ -176,4 +176,22 @@ header .header-text:hover {
 }
 .sign-up-button-box .sign-up-button {
   margin: 0px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  background-color: #615b54;
+  justify-content: center;
+  align-items: center;
+}
+.odin-footer, .github-footer {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 5px auto;
+}
+#github {
+  margin: 0 5px;
 }
