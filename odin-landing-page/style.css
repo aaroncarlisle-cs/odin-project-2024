@@ -118,3 +118,8 @@ header .header-text:hover {
   color: #008AD3;
   cursor: pointer;
 }
+.quote {
+  display: flex;
+  height: 330px;
+  background-color: rgb(247, 244, 244);
+}
