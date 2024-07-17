@@ -78,7 +78,7 @@ li {
 }
 .sign-up-button:hover {
   cursor: pointer;
-  border: 2px solid #f2f2f2;
+  border: 2px solid black;
   color: black;
   background-color: #f2f2f2;
 }
