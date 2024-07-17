@@ -35,7 +35,7 @@ li {
 }
 .hero {
   display: flex;
-  height: 400px;
+  height: 330px;
   background-color: #615b54;
   padding: 20px 20%;
   justify-content: space-between;
