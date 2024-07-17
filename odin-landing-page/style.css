@@ -138,3 +138,42 @@ header .header-text:hover {
   margin-top: 20px;
   font-family: "Roboto Condensed", sans-serif;
 }
+.sign-up {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.sign-up-box {
+  display: flex;
+  height: 60%;
+  width: 70%;
+  background-color: #008AD3;
+  margin: 80px auto;
+  border-radius: 25px;
+  justify-content: center;
+}
+.sign-up-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.sign-up-text .header-text {
+  color: #f2f2f2;
+  font-size: 32px;
+}
+.sign-up-text .paragraph-text {
+  color: #f2f2f2;
+  font-size: 22px;
+  margin: 20px auto;
+}
+.sign-up-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.sign-up-button-box .sign-up-button {
+  margin: 0px;
+}
