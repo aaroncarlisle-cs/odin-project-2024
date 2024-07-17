@@ -73,7 +73,7 @@ li {
   border: 2px solid black;
 }
 .sign-up-button:hover {
-  background-color: #9fa4b2;
+  background-color: #008AD3;
   cursor: pointer;
 }
 .gallery {
@@ -102,5 +102,9 @@ li {
   color: #f2f2f2;
 }
 .header-link:hover {
-  color: black;
+  color: #008AD3;
+}
+header .header-text:hover {
+  color: #008AD3;
+  cursor: pointer;
 }
