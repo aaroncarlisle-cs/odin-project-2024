@@ -1,23 +1,25 @@
 let computerScore = 0;
 let humanScore = 0;
+let totalRounds = 0;
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
     switch (choice) {
         case 0:
-            choice = 'rock';
+            console.log("Computer's choice is rock");
+            return 'rock';
         case 1:
-            choice = 'paper';
+            console.log("Computer's choice is paper");
+            return 'paper';
         case 2:
-            choice = 'scissors';
+            console.log("Computer's choice is scissors");
+            return 'scissors';
     }
-    console.log(`Computer's choice is: ${choice}`);
-    return choice;
 }
 
 function getHumanChoice() {
     let choice = prompt('Please enter rock, paper, or scissors');
-    choice = choice.toLowerCase();
+    if (choice) choice = choice.toLowerCase();
     if (choice == 'rock' || choice == 'paper' || choice == 'scissors') {
         console.log(`Player's choice is: ${choice}`);
         return choice;
@@ -48,7 +50,13 @@ function playRound(computerChoice, humanChoice) {
     console.log(`Player's score: ${humanScore}`);
 }
 
-let computerChoice = getComputerChoice();
-let humanChoice = getHumanChoice();
+function playGame() {
+    while (totalRounds < 5) {
+        let computerChoice = getComputerChoice();
+        let humanChoice = getHumanChoice();
+        playRound(computerChoice, humanChoice);
+        totalRounds++;
+    }
+}
 
-playRound(computerChoice, humanChoice);
+playGame();
