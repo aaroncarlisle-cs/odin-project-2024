@@ -6,15 +6,17 @@ function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
     switch (choice) {
         case 0:
-            console.log("Computer's choice is rock");
-            return 'rock';
+            choice = 'rock';
+            break;
         case 1:
-            console.log("Computer's choice is paper");
-            return 'paper';
+            choice = 'paper';
+            break;
         case 2:
-            console.log("Computer's choice is scissors");
-            return 'scissors';
+            choice = 'scissors';
+            break;
     }
+    console.log(`Computer's choice is ${choice}`);
+    return choice;
 }
 
 function getHumanChoice() {
