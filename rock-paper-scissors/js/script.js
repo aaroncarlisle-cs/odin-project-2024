@@ -52,7 +52,6 @@ function playGame() {
         }
         console.log(`Computer's score: ${computerScore}`);
         console.log(`Player's score: ${humanScore}`);
-        console.log('');
     }
 
     while (totalRounds <= 5) {
