@@ -1,6 +1,3 @@
-let computerScore = 0;
-let humanScore = 0;
-let totalRounds = 0;
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
@@ -32,33 +29,45 @@ function getHumanChoice() {
     }
 }
 
-function playRound(computerChoice, humanChoice) {
-    if (computerChoice == humanChoice) {
-        console.log('Draw!');
-        return;
-    }
-    switch (computerChoice) {
-        case 'rock': 
-            (humanChoice == 'scissors') ? computerScore++ : humanScore++;
-            break;
-        case 'paper':
-            (humanChoice == 'rock') ? computerScore++ : humanScore++;
-            break;
-        case 'scissors':
-            (humanChoice == 'paper') ? computerScore++ : humanScore++;
-            break;
-    }
-    console.log(`Computer's score: ${computerScore}`);
-    console.log(`Player's score: ${humanScore}`);
-}
-
 function playGame() {
-    while (totalRounds < 5) {
+    let computerScore = 0;
+    let humanScore = 0;
+    let totalRounds = 1;
+    
+    function playRound(computerChoice, humanChoice) {
+        if (computerChoice == humanChoice) {
+            console.log('Draw!');
+            return;
+        }
+        switch (computerChoice) {
+            case 'rock': 
+                (humanChoice == 'scissors') ? computerScore++ : humanScore++;
+                break;
+            case 'paper':
+                (humanChoice == 'rock') ? computerScore++ : humanScore++;
+                break;
+            case 'scissors':
+                (humanChoice == 'paper') ? computerScore++ : humanScore++;
+                break;
+        }
+        console.log(`Computer's score: ${computerScore}`);
+        console.log(`Player's score: ${humanScore}`);
+        console.log('');
+    }
+
+    while (totalRounds <= 5) {
+        console.log('');
+        console.log(`Next round!`);
         let computerChoice = getComputerChoice();
         let humanChoice = getHumanChoice();
         playRound(computerChoice, humanChoice);
         totalRounds++;
     }
+
+    console.log(`Game over!`);
+    console.log(`-Final Score-`);
+    console.log(`Computer: ${computerScore}`);
+    console.log(`Player: ${humanScore}`);
 }
 
 playGame();
