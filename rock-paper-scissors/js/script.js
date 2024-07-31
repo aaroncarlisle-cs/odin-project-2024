@@ -63,6 +63,7 @@ function playGame() {
         totalRounds++;
     }
 
+    console.log('');
     console.log(`Game over!`);
     console.log(`-Final Score-`);
     console.log(`Computer: ${computerScore}`);
